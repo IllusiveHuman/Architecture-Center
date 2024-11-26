@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: sans-serif, "Futura PT Book";
+}
+
+html {
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--2--col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--col {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem;
+}
+
+.grid--3-1--col {
+    grid-template-columns: 1.26fr 1.26fr 1.74fr;
+    gap: 7rem;
+}
+
+.grid--4--col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--col {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container-global {
+    margin: 0 5rem 0 5rem;
+}

@@ -1,0 +1,215 @@
+li {
+    display: inline-block;
+}
+
+.footer {
+    background-color: #1C1C1C;
+    height: 18.3rem;
+
+    padding: 7.5rem 0 0 6rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+}
+
+.company-name {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.303rem;
+
+    color: #fff;
+
+
+}
+
+.footer-nav-list {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.footer-nav-link:link,
+.footer-nav-link:visited {
+    font-family: "Futura PT Book";
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.795rem;
+    letter-spacing: 0.04em;
+
+    color: rgb(158, 156, 156);
+
+    transition: all 0.4s;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:active {
+    cursor: pointer;
+    color: #c8c7c7;
+}
+
+.social-nav-footer {
+    margin-left: 15rem;
+}
+
+.social-nav-list-footer {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.social-nav-link-footer {
+    font-family: "Futura PT Book";
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.538rem;
+    letter-spacing: 0.04em;
+
+    color: #696969;
+
+    transition: all 0.4s;
+}
+
+.social-nav-link-footer:hover,
+.social-nav-link-footer:active {
+    cursor: pointer;
+    color: #c8c7c7;
+}
+
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.phone:link,
+.phone:visited {
+
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.896rem;
+    letter-spacing: 0.03em;
+
+    color: #696969;
+
+    transition: all 0.4s;
+}
+
+.phone:hover,
+.phone:active {
+    cursor: pointer;
+    color: #c8c7c7
+}
+
+.phone:before {
+    content: '';
+
+    display: inline-block;
+
+    width: 1rem;
+    height: 1rem;
+
+    margin-right: 0.3rem;
+
+    background-image: url("/imgs/header/iconPhone.svg");
+
+    transform: translateY(-1px);
+
+    fill: #696969;
+}
+
+// @media(min-width:75em) and (max-width:106em) {
+.footer-container {
+    gap: 2rem;
+}
+
+.social-nav-footer,
+.footer-nav {
+    margin-left: 5rem;
+}
+
+.contacts-footer {
+    margin-left: 3rem;
+}
+
+
+.company-name-footer {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.303rem;
+
+    color: #fff;
+}
+
+// }
+
+//20em and 30em
+@media(min-width:320px) and (max-width:480px) {
+    .footer {
+        padding: 0;
+        padding-top: 6rem;
+
+        height: auto;
+        transform: translate(0);
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .company-name-footer {
+        grid-column: 1;
+        /* Первая колонка */
+        grid-row: 1;
+        /* Первая строка */
+        align-self: flex-start;
+    }
+
+    .footer-nav {
+        grid-column: 1;
+        /* Первая колонка */
+        grid-row: 2;
+        /* Вторая строка */
+
+        margin: 0;
+    }
+
+    .social-nav-footer {
+        grid-column: 2;
+        /* Вторая колонка */
+        grid-row: 1;
+        /* Первая строка */
+    }
+
+    .contacts-footer {
+        grid-column: 2;
+        /* Вторая колонка */
+        grid-row: 2;
+        /* Вторая строка */
+        margin: 0;
+    }
+
+    .footer-nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-nav-list-footer {
+        display: flex;
+        flex-direction: column;
+
+        gap: 2.2rem;
+    }
+}

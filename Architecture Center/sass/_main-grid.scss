@@ -1,0 +1,883 @@
+// @media(min-width:100em) {
+
+.about-company,
+.photo {
+    height: 34.1rem;
+}
+
+.about-company {
+    margin-top: 8rem;
+
+    height: 34.1rem;
+}
+
+.services {
+    padding-right: 2.7rem;
+}
+
+.services,
+.awards,
+.service-link:link,
+.service-link:visited,
+.awards-link:link,
+.awards-link:visited {
+    margin-top: 3.5rem;
+
+    border: none;
+    background-color: transparent;
+
+    font-family: "Futura PT Book";
+
+    text-decoration: underline 1px solid #B6D7E8;
+    text-underline-offset: .3rem;
+
+    color: #000000;
+}
+
+.about h1 {
+    display: inline-block;
+    margin-bottom: 3.4rem;
+
+
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.803rem;
+    letter-spacing: 0.03em;
+
+    color: #1C1C1C;
+    transform: translateX(-24px);
+}
+
+.about h1:before {
+    content: '';
+    display: inline-block;
+
+    width: 2.4rem;
+    height: 0.3rem;
+
+    background-color: #B6D7E8;
+
+    transform: translate(-10px, -5px);
+}
+
+.about p {
+    width: 35rem;
+
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.803rem;
+    letter-spacing: 0.03em;
+}
+
+.roles--list {
+    width: 31.2rem;
+    /*31.2rem;*/
+    margin-left: 3.9rem;
+    list-style: none;
+}
+
+.roles--list li h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+
+
+}
+
+.roles--list li p {
+    padding-top: .3rem;
+
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.69rem;
+    color: #1C1C1C;
+
+}
+
+.role-1:before {
+    content: '01';
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    color: #B6D7E8;
+
+    display: inline-block;
+    transform: translate(-35px, 30px);
+}
+
+.role-2:before {
+    content: '02';
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    color: #B6D7E8;
+
+    display: inline-block;
+    transform: translate(-35px, 30px);
+}
+
+.role-3:before {
+    content: '03';
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    color: #B6D7E8;
+
+    display: inline-block;
+    transform: translate(-35px, 30px);
+}
+
+
+
+/*********************************************************************/
+
+.our-projects {
+    margin-top: 15rem;
+}
+
+.margin-name-prjct {
+    margin-left: 4.8rem;
+}
+
+.our-projects h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.564rem;
+    letter-spacing: 0.03em;
+
+    color: #1C1C1C;
+
+    transform: translateX(-24px);
+}
+
+
+.our-projects h2:before {
+    content: '';
+    display: inline-block;
+
+    width: 2.4rem;
+    height: 0.3rem;
+
+    background-color: #B6D7E8;
+
+    transform: translate(-10px, -5px);
+}
+
+.project-1 {
+    margin-top: 4.5rem;
+
+    align-items: start
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.564rem;
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+
+    margin: 6.5rem 0;
+}
+
+.grid:nth-child(3n + 2) {
+    justify-self: center;
+}
+
+.properties-list {
+    list-style: none;
+
+
+}
+
+.properties {
+    margin: auto 0;
+}
+
+.info-item {
+    margin-top: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-label {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.667rem;
+    letter-spacing: 0.03em;
+
+    color: #1C1C1C;
+
+    margin-bottom: 1.5rem;
+}
+
+.info-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.923rem;
+    letter-spacing: 0.03em;
+
+    color: #1C1C1C;
+}
+
+
+/**************************/
+
+.container {
+    margin-top: 7.5rem;
+
+    display: flex;
+
+    // height: 58.6rem;
+
+    width: 100%;
+}
+
+
+.calculator {
+    position: relative;
+}
+
+.calc-foto-2 {
+    // position: absolute;
+    // right: 0;
+
+    width: 44.4375%;
+    height: 58.6rem;
+    // width: 60%;
+}
+
+.info-calc {
+
+
+    // position: absolute;
+
+    background-image: url("/imgs/main/calc-foto-1.jpg");
+    width: 55.5625%;
+    // width: 50%;
+    height: 58.6rem;
+}
+
+.selectors {
+    margin-top: 6.3rem;
+
+    grid-template-columns: 35.2rem 35.2rem;
+    column-gap: 7.7rem;
+    row-gap: 4rem;
+
+    // gap: 4rem;
+
+    justify-content: center;
+}
+
+.select-wrapper {
+    width: 35.2rem;
+    height: 5rem;
+
+    position: relative;
+}
+
+.select-wrapper::before {
+    position: absolute;
+
+    top: 1rem;
+    right: 3.5rem;
+
+    content: '';
+
+    display: block;
+    width: 3rem;
+    height: 3rem;
+
+    background-image: url('/imgs/main/svgs/icons8-expand-arrow-30\ 1.svg');
+
+    pointer-events: none;
+}
+
+.select-wrapper select {
+
+    width: 35.2rem;
+    height: 5rem;
+
+    cursor: pointer;
+    appearance: none;
+
+    background-color: transparent;
+
+    text-indent: 3.5rem;
+
+    border: 1px solid #B6D7E8;
+
+
+    font-family: "Futura PT Book";
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 25.64px;
+
+    color: #fff;
+
+    outline: none;
+}
+
+.select-wrapper option {
+    color: #000000;
+}
+
+.calc {
+    margin: 7.6rem 0 0 6rem;
+
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.564rem;
+    letter-spacing: 0.03em;
+
+    color: #fff;
+}
+
+.calc:before {
+    content: '';
+    display: block;
+
+    width: 2.4rem;
+    height: 0.3rem;
+    background-color: #B6D7E8;
+
+    transform: translate(-33px, 15px);
+}
+
+
+/*Input[type="range"]*/
+
+.container-sliders {
+    display: flex;
+
+    gap: 7.7rem;
+
+    justify-content: center;
+}
+
+.name-range {
+    margin: 3.9rem 0 3.2rem 0;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.743rem;
+    letter-spacing: 0.06em;
+    text-align: start;
+
+    color: #FFFFFF;
+}
+
+.range-1 {
+    width: 35.1rem;
+    // margin-left: 6rem;
+}
+
+.slider {
+    display: flex;
+
+    position: relative;
+}
+
+
+.right-1,
+.right-2 {
+    right: 0;
+}
+
+.value-1,
+.value-2 {
+    font-family: "Futura PT Book";
+
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.494rem;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    top: .9rem;
+
+    transition: all 0.4s;
+}
+
+.value-translate {
+    transform: translateY(-3.5rem);
+}
+
+.current-slider-value-1,
+.current-slider-value-2 {
+    font-size: 1.5rem;
+
+    padding-top: .3rem;
+
+    position: absolute;
+    left: -10px;
+    transform: translateX(50%);
+    white-space: nowrap;
+
+    display: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35.1rem;
+    background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #B6D7E8;
+    height: .2rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+
+    appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+
+    border-radius: 50%;
+    background-color: #fff;
+
+    cursor: pointer;
+
+    margin-top: -5px;
+}
+
+.slider-value-1,
+.slider-value-2 {
+    position: relative;
+}
+
+.slider-value-1 span,
+.slider-value-2 span {
+    width: 2rem;
+    color: #fff;
+    margin-top: .3rem;
+
+}
+
+// Buttons
+
+.calculate-buttons {
+    margin-top: 6rem;
+
+    display: flex;
+    gap: 7.7rem;
+
+    // justify-content: center;
+}
+
+.calculate-cost {
+    width: 35.2rem;
+    height: 5rem;
+
+    background-color: #B6D7E8;
+    color: #1C1C1C;
+
+    font-family: "Futura PT Book";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.923rem;
+    border: none;
+
+    cursor: pointer;
+}
+
+.calculate-cost:active {
+    box-shadow: inset 4px 13px -6px rgba(0, 0, 0, 0.53);
+}
+
+.clear-filters {
+    background-color: transparent;
+    border: none;
+
+    color: #949191;
+    font-family: "Futura PT Book";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.743rem;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    // text-decoration: underline 1px solid #B6D7E8;
+    // text-underline-offset: .7rem;
+
+    transform: translateY(14px);
+}
+
+// }
+
+
+//20em and 30em
+@media(min-width:320px) and (max-width:480px) {
+    .container-global {
+        margin: 0;
+    }
+
+    .about-company {
+        grid-template-columns: 1fr;
+        /* одна колонка */
+        grid-template-rows: repeat(3, auto);
+        /* три строки */
+        grid-template-areas:
+            "about"
+            "roles"
+            "photo";
+
+        height: auto;
+
+        gap: 0rem;
+    }
+
+    .photo {
+        height: auto;
+    }
+
+    .about-position {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-btns {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about h1 {
+        transform: translate(0);
+
+        text-align: center;
+
+        width: 26rem;
+    }
+
+    .about h1::before {
+        display: none;
+    }
+
+    .about h1::after {
+        content: '';
+        display: inline-block;
+        width: 17rem;
+        height: .3rem;
+        background-color: #b6d7e8;
+    }
+
+    /*OUR PROJECTS*/
+
+    .our-projects h2 {
+        text-align: center;
+        transform: translateX(0);
+        text-decoration: underline 2px solid #B6D7E8;
+        text-underline-offset: .7rem;
+    }
+
+    .our-projects h2::before {
+        display: none;
+    }
+
+    .our-projects div {
+        width: 100vw;
+
+        grid-template-columns: 1fr;
+        /* одна колонка */
+        grid-template-rows: 10rem auto auto;
+        ;
+
+    }
+
+    .roles--list {
+        margin: 0;
+    }
+
+    .roles {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        width: 100vw;
+        margin-top: 3.5rem;
+    }
+
+    .project-1 {
+        margin: 0;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3 {
+        gap: 2rem;
+    }
+
+    .name {
+        margin-left: 4vw;
+    }
+
+    .info-item {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .photo_project {
+        width: 100vw;
+        margin-top: 2rem;
+    }
+
+    .info-calc {
+        padding-top: 3rem;
+        background-image: none;
+        background-color: #1C1C1C;
+        width: 100vw;
+        height: auto;
+    }
+
+    .calc {
+        margin: auto;
+        width: 27rem;
+        text-align: center;
+
+        display: block;
+    }
+
+    .calc::before {
+        display: none;
+    }
+
+    .calc::after {
+        content: '';
+        display: inline-block;
+        width: 15rem;
+        height: .3rem;
+        background-color: #b6d7e8;
+    }
+
+    .selectors {
+        margin-left: 0;
+
+        grid-template-columns: 1fr;
+        /* одна колонка */
+        grid-template-rows: repeat(4, auto);
+
+        justify-items: center;
+    }
+
+    .calc-foto-2 {
+        display: none;
+    }
+
+    .select-wrapper {
+        margin: 0 1rem 0 1rem;
+        width: 30rem;
+    }
+
+    .select-wrapper select {
+        width: 30rem;
+        text-indent: 2rem;
+    }
+
+    .container-sliders {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    .range-1,
+    .range-2 {
+        margin: auto;
+        width: 30rem;
+    }
+
+
+    .calculate-buttons {
+        width: 100%;
+        margin: 0;
+        margin-top: 3.5rem;
+
+        flex-direction: column;
+        gap: 1.2rem;
+
+        align-items: center;
+        height: auto;
+    }
+
+
+    .clear-filters {
+        margin-top: .4rem;
+
+        display: inline-block;
+        width: auto;
+        height: 3rem;
+        align-self: flex-start;
+
+        font-size: 1.8rem;
+        transform: translate(0);
+
+        text-decoration: underline 1px solid #B6D7E8;
+
+        text-underline-offset: .7rem;
+
+    }
+}
+
+// @media(min-width:90em) and (max-width:106em) {
+//     .photo_project {
+//         width: 100%;
+
+//     }
+
+//     .selectors {
+//         margin-left: 4rem;
+//         grid-template-columns: 27rem 27rem;
+//         column-gap: 11rem;
+//     }
+
+//     .info-calc,
+//     .calc-foto-2 {
+//         height: 50rem;
+//     }
+
+//     .calc {
+//         margin-top: 3rem;
+//     }
+
+//     .select-wrapper,
+//     .select-wrapper select {
+//         width: 27rem;
+//     }
+
+//     .container {
+//         height: 50rem;
+//     }
+
+//     .container-sliders {
+//         gap: 1.5rem;
+//     }
+
+//     .range-1 {
+//         margin-left: 4rem;
+//     }
+
+//     .range-1,
+//     .range-2 {
+//         width: 27rem;
+//     }
+
+//     .range-2 {
+//         margin-left: 11rem;
+//     }
+
+//     .calculate-buttons {
+//         margin-left: 4rem;
+//     }
+
+//     .footer-container {
+//         gap: 7rem !important;
+//     }
+// }
+
+// @media(min-width:100em) {
+//     .selectors {
+//         margin-left: 3rem;
+//         grid-template-columns: 33rem 33rem;
+//     }
+
+//     .range-1 {
+//         margin-left: 3rem;
+//     }
+
+//     .range-2 {
+//         margin-left: 9rem;
+//     }
+
+//     .select-wrapper,
+//     .select-wrapper select,
+//     .range-1,
+//     .range-2 {
+//         width: 33rem;
+//     }
+
+//     .calculate-buttons {
+//         margin-left: 3rem;
+//     }
+
+//     .footer-container {
+//         gap: 10rem !important;
+//     }
+// }
+
+// @media(m-width:79.99em) {
+
+//     .about-company {
+//         grid-template-columns: 30rem 30rem auto;
+//         gap: 12rem;
+//     }
+
+//     // .about,
+//     // .roles,
+//     // .roles--list,
+//     // .about-company,
+//     // .photo {
+//     //     height: 38rem;
+//     // }
+
+
+//     .our-projects {
+//         margin-top: 10rem;
+//     }
+
+//     .about p {
+//         width: 30rem;
+//     }
+
+//     .name {
+//         margin-top: 1.7rem;
+//         word-wrap: break-word;
+//     }
+
+//     .grid--3--col {
+//         grid-template-columns: 19.5rem 28rem auto;
+//     }
+
+//     .calc {
+//         margin-top: 6rem;
+//     }
+
+//     .selectors {
+//         margin-left: 3.5rem;
+//         grid-template-columns: 27.2rem 27.2rem;
+//         column-gap: 4.7rem;
+//     }
+
+//     .select-wrapper,
+//     .select-wrapper select,
+//     .range-1,
+//     .range-2 {
+//         width: 27.2rem;
+//     }
+
+//     .range-1 {
+//         margin-left: 3.5rem;
+//     }
+
+//     .container-sliders {
+//         gap: 4.7rem;
+//     }
+
+
+// }
