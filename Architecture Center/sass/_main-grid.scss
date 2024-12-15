@@ -551,6 +551,10 @@ input[type="range"]::-webkit-slider-thumb {
         align-items: center;
     }
 
+    .about-position p {
+        width: 90vw;
+    }
+
     .about-btns {
         width: 100vw;
         display: flex;
@@ -602,6 +606,18 @@ input[type="range"]::-webkit-slider-thumb {
 
     .roles--list {
         margin: 0;
+    }
+
+    .roles--list li::before {
+        transform: translate(-20px, 30px);
+    }
+
+    .roles--list li h1 {
+        transform: translateX(10px);
+    }
+
+    .roles--list li p {
+        transform: translateX(10px);
     }
 
     .roles {

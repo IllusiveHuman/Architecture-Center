@@ -3,8 +3,11 @@ const slideValue_1 = document.querySelector('.current-slider-value-1');
 const slideValue_2 = document.querySelector('.current-slider-value-2');
 const inputSlider_1 = document.querySelector('.input-range-floor');
 const inputSlider_2 = document.querySelector('.input-range-time');
+const showCurrentSliderValue = document.querySelectorAll('.current-slider-value-1, .current-slider-value-2')
 const parametrs_1 = document.querySelectorAll('.value-1');
 const parametrs_2 = document.querySelectorAll('.value-2');
+const clearFilters = document.querySelector('.clear-filters')
+
 
 const navigation = document.querySelector('.navigation');
 const btn_menu = document.querySelector('.menu');
@@ -104,7 +107,7 @@ initSlider()
 /*Автоширина Select/range/calculateBTN */
 
 const allSelectorsBlocks = document.querySelectorAll('.select-wrapper')
-const allInsideSelectorsEl = document.querySelectorAll('.select-wrapper select')
+const allSelectors = document.querySelectorAll('.select-wrapper select')
 const range_1 = document.querySelector('.range-1')
 const range_2 = document.querySelector('.range-2')
 const input_range_time = document.querySelector('.input-range-time')
@@ -118,7 +121,7 @@ const initAllSelectors = function () {
         element.style.width = `${window.innerWidth * 0.85}px`
     })
 
-    allInsideSelectorsEl.forEach(element => {
+    allSelectors.forEach(element => {
         element.style.width = `${window.innerWidth * 0.85}px`
     })
     range_1.style.width = `${window.innerWidth * 0.85}px`
@@ -133,8 +136,6 @@ if (window.innerWidth <= 480) { initAllSelectors() }
 
 /*Выравния кнопки расчёта и сброса фильтров */
 
-const clearFilters = document.querySelector('.clear-filters');
-
 const initClearFilterBtn = function () {
     const margin_left = (window.innerWidth - parseFloat(calculate_cost.style.width)) / 2;
     console.log(margin_left)
@@ -144,18 +145,45 @@ const initClearFilterBtn = function () {
 if (window.innerWidth <= 480) { initClearFilterBtn() }
 
 
-const calculate_buttons = document.querySelector('.calculate-buttons')
 const autoMarginCalculateBtn = function () {
-    const selectors = document.querySelector('.selectors').getBoundingClientRect()
+    const calculate_buttons = document.querySelector('.calculate-buttons')
     const selector_element = document.querySelector('.select-wrapper').getBoundingClientRect()
 
 
-    calculate_buttons.style.marginLeft = `${selector_element.left - selectors.left}px`
+    calculate_buttons.style.marginLeft = `${selector_element.left - calculate_buttons.getBoundingClientRect().left}px`
 }
 
 
 if (window.innerWidth > 480) autoMarginCalculateBtn()
 
+clearFilters.addEventListener('click', () => {
+    allSelectors.forEach(selector => {
+        selector.selectedIndex = 0;
+    })
+    inputSlider_1.value = inputSlider_1.min
+    inputSlider_2.value = inputSlider_2.min
+    showCurrentSliderValue.forEach(el => {
+        el.style.display = 'none'
+    })
+})
+
+
+/*Плавная анимация при первом скролле*/
+
+const sections = document.querySelectorAll('.section')
+
+const lazyload = function (entries, observer) {
+    const [entry] = entries
+    entry.target.classList.remove('lazy-load')
+    observer.unobserve(entry.target)
+}
+
+const observer = new IntersectionObserver(lazyload, {
+    root: null,
+    rootMargin: '-100px',
+    threshold: 0.15
+})
+sections.forEach((section) => observer.observe(section))
 
 
 

@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: sans-serif, "Futura PT Book";
 }
 
@@ -47,4 +47,13 @@ html {
 
 .container-global {
     margin: 0 5rem 0 5rem;
+}
+
+.lazy-load {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.section {
+    transition: all 0.6s ease-in-out;
 }
